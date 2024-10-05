@@ -1,0 +1,50 @@
+html *{
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+  text-align: center;  
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header{
+   
+    align-content: center;
+    background: linear-gradient(#1E5EE5, #ffffff, #ffffff, #4BDCB0);
+}
+h2{
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    color: #4BDCB0;
+    color: #1E5EE5;
+    margin-bottom: 5px;
+    
+    
+}
+h3{
+    font-family: "Public Sans", sans-serif;
+    color: #4BDCB0;
+    margin-top: 3px;
+    font-style: italic;
+    font-size: 25px;
+    
+}
+.location{
+    
+    text-align: right;
+    justify-content: flex-end;
+    
+}
+.dataContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.conversionDiv{
+    display: flex;
+    flex-direction:column;  
+    justify-content: center;
+    margin-top: 2em; 
+}
