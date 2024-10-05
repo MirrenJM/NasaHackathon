@@ -1,50 +1,103 @@
-html *{
-  font-family: "Public Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal; 
-  text-align: center;  
+html * {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #fafafa;
 }
-.header{
-   
+
+.header {
+
     align-content: center;
-    background: linear-gradient(#1E5EE5, #ffffff, #ffffff, #4BDCB0);
+    background: linear-gradient(#00e3ff, #ffffff, #ffffff, #00ff1f);
+    max-height: fit-content;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
-h2{
+
+h2 {
     font-family: "Playfair Display", serif;
-    font-size: 60px;
+    font-size: 50px;
     color: #4BDCB0;
     color: #1E5EE5;
-    margin-bottom: 5px;
-    
-    
+   
+
 }
-h3{
+
+h3 {
     font-family: "Public Sans", sans-serif;
-    color: #4BDCB0;
+    color: #0a7407;
     margin-top: 3px;
     font-style: italic;
     font-size: 25px;
-    
+
 }
-.location{
-    
+
+.informationContainer {
+    margin: 1px;
+    border-radius: 5px;
+    box-shadow: 0px 0.1px 0.1px 1px;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+}
+
+.location {
+
     text-align: right;
     justify-content: flex-end;
-    
+
 }
-.dataContainer{
+
+.dataContainer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
 }
-.conversionDiv{
+
+.conversionDiv {
     display: flex;
-    flex-direction:column;  
+    flex-direction: column;
     justify-content: center;
-    margin-top: 2em; 
+    margin-top: 2em;
+}
+
+.conversionItemDiv {
+    display: flex;
+    align-items: center;
+    background: #EFEEE7;
+    border-radius: 7px;
+    box-shadow: 0 3px 5px;
+    padding: 10px;
+    line-height: 2;
+    margin: 8px;
+}
+
+.containerIcons {
+    max-width: 100px;
+}
+
+.footer-heading {
+    font-size: 20px
+}
+
+.footer {
+    font-family: "Public Sans", sans-serif;
+    align-content: center;
+    background: #ebe7c9;
+    line-height: 2;
+    border-top: 50px black;
+    margin-top: 50px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    
 }
