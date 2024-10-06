@@ -51,6 +51,8 @@ fetch('https://power.larc.nasa.gov/api/temporal/monthly/point?start=2020&end=202
     })
 })
 
+
+
 function createChart(evapo_transpiration_data, agriculture_data, precipitation_data, type) {
     const label = Object.keys(precipitation_data);  // month-year horizontal axis
 

@@ -1,0 +1,81 @@
+﻿My Climate View (www.myclimateview.com.au)
+
+"My Climate View has been developed by CSIRO and the Bureau of Meteorology as part of the Australian Government’s Future Drought Fund (FDF) Climate Services for Agriculture program, which receives funding from the FDF."
+"Modification of any material from the My Climate View website (including CSV data, images, or use of APIs) must be clearly stated."
+"To reference this data, use: CSIRO and Bureau of Meteorology, My Climate View website (www.myclimateview.com.au), accessed 6 October 2024"
+
+"Issued: 6 October 2024"
+"CMIP version: CMIP5"
+"Location: Barossa Goldfields, SA (138.819, -34.657)"
+"Climate factor: Winter potential evapotranspiration (mm)"
+"Potential evapotranspiration is the maximum amount of water that could evaporate and transpire from a generic landscape and is not crop specific. Calculations use the Penman equation (https://doi.org/10.1098/rspa.1948.0037). Winter is defined as between 1 June and 31 August."
+
+"Water-based data (potential evapotranspiration and soil moisture) is sourced from the Bureau of Meteorology's Australian Water Outlook service (https://awo.bom.gov.au/about/overview)"
+
+"Why doesn't My Climate View provide potential evapotranspiration data prior to 1990?"
+"The AWRA-L hydrological landscape model that is used to calculate potential evapotranspiration (PET) for My Climate View requires daily data for temperature, solar radiation and surface wind. For more information see the AWRA-L technical report (awo.bom.gov.au/assets/notes/publications/AWRALv6_Model_Description_Report.pdf)."
+"Before 1990, available solar radiation data is in the form of long-term monthly averages."
+"Since 1990, satellite technologies provide higher resolution daily solar radiation data."
+"Combining these two sources in a single dataset might suggest increased variability of PET since 1990, which would be misleading. Therefore, My Climate View does not provide PET data prior to 1990."
+
+Year,Winter potential evapotranspiration (mm)
+1964,165.4
+1965,170.5
+1966,161.5
+1967,175.8
+1968,154.5
+1969,174.3
+1970,163.7
+1971,160.9
+1972,174.7
+1973,166.5
+1974,164.6
+1975,173.5
+1976,171.4
+1977,182.1
+1978,157.1
+1979,172
+1980,175.2
+1981,174.3
+1982,174.1
+1983,166.5
+1984,167.2
+1985,167.4
+1986,156.3
+1987,159.4
+1988,170.7
+1989,151
+1990,160.5
+1991,157.3
+1992,161.4
+1993,167.1
+1994,162.7
+1995,164.4
+1996,159.2
+1997,159
+1998,158.3
+1999,167.6
+2000,161.2
+2001,153.1
+2002,169.3
+2003,160.5
+2004,160.8
+2005,166.7
+2006,161.5
+2007,161.8
+2008,152.7
+2009,165.9
+2010,153.4
+2011,164.2
+2012,159.8
+2013,161.8
+2014,166.3
+2015,160.4
+2016,165.4
+2017,164.8
+2018,176.3
+2019,160.9
+2020,158
+2021,165.4
+2022,158
+2023,163.2

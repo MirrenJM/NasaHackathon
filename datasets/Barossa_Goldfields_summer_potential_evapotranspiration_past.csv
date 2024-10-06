@@ -1,0 +1,81 @@
+﻿My Climate View (www.myclimateview.com.au)
+
+"My Climate View has been developed by CSIRO and the Bureau of Meteorology as part of the Australian Government’s Future Drought Fund (FDF) Climate Services for Agriculture program, which receives funding from the FDF."
+"Modification of any material from the My Climate View website (including CSV data, images, or use of APIs) must be clearly stated."
+"To reference this data, use: CSIRO and Bureau of Meteorology, My Climate View website (www.myclimateview.com.au), accessed 6 October 2024"
+
+"Issued: 6 October 2024"
+"CMIP version: CMIP5"
+"Location: Barossa Goldfields, SA (138.819, -34.657)"
+"Climate factor: Summer potential evapotranspiration (mm)"
+"Potential evapotranspiration is the maximum amount of water that could evaporate and transpire from a generic landscape and is not crop specific. Calculations use the Penman equation (https://doi.org/10.1098/rspa.1948.0037). Summer is defined as between 1 December and 28 February."
+
+"Water-based data (potential evapotranspiration and soil moisture) is sourced from the Bureau of Meteorology's Australian Water Outlook service (https://awo.bom.gov.au/about/overview)"
+
+"Why doesn't My Climate View provide potential evapotranspiration data prior to 1990?"
+"The AWRA-L hydrological landscape model that is used to calculate potential evapotranspiration (PET) for My Climate View requires daily data for temperature, solar radiation and surface wind. For more information see the AWRA-L technical report (awo.bom.gov.au/assets/notes/publications/AWRALv6_Model_Description_Report.pdf)."
+"Before 1990, available solar radiation data is in the form of long-term monthly averages."
+"Since 1990, satellite technologies provide higher resolution daily solar radiation data."
+"Combining these two sources in a single dataset might suggest increased variability of PET since 1990, which would be misleading. Therefore, My Climate View does not provide PET data prior to 1990."
+
+Year,Summer potential evapotranspiration (mm)
+1964,581.7
+1965,620.7
+1966,588.9
+1967,623
+1968,597
+1969,589.8
+1970,609.2
+1971,598.9
+1972,616.3
+1973,597.9
+1974,588.7
+1975,617.3
+1976,625.7
+1977,607.1
+1978,627.1
+1979,604.6
+1980,634.8
+1981,612.9
+1982,628.7
+1983,614.3
+1984,611.1
+1985,583.2
+1986,583
+1987,613.5
+1988,615
+1989,593.1
+1990,606.1
+1991,573.1
+1992,533.2
+1993,549.1
+1994,630.4
+1995,604.8
+1996,619.7
+1997,613.9
+1998,633.5
+1999,600.7
+2000,662.8
+2001,567
+2002,625
+2003,604.2
+2004,588.5
+2005,612.1
+2006,630.1
+2007,615.6
+2008,620.8
+2009,639.2
+2010,592.1
+2011,610.8
+2012,634
+2013,628.6
+2014,610.1
+2015,649.2
+2016,581.2
+2017,577.4
+2018,617.1
+2019,601.8
+2020,571.3
+2021,591.4
+2022,594.3
+2023,593.4
