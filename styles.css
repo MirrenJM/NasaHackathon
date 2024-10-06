@@ -153,3 +153,9 @@ h3 {
 .video{
     margin: 50px;
 }
+.slides{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
