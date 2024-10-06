@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,47 +8,85 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
+
         <div class="header">
-            <h2>RainRoots</h2>
-            <div class="slogan">
-                <h3>Not what the rain can do for your farm, but what your farm can do for the rain. </h3>
-            </div>
-            
-            <div>
-                <div class="location">
-                    <p>Location:  <span>lat: 101.1010</span> <span>long: 10101.101</span></p>
-                </div>
-                <div class="dataContainer">
-                    <div class="conversionDiv">
-                        <label for="foliage">Foliage cover(%)</label>
-                        <input type="" id="foliage" name="foliage"> 
-                        <br>
-                        <label for="groundMoisture">Ground Moisture()</label>
-                        <input type="" id="groundMoisture" name="groundMoisture"> 
-                        <br>
-                        <label for="precipitation">Precipitation(mm)</label>
-                        <input type="" id="precipitation" name="precipitation"> 
-                        <br>
-                </div>
-            </div>
-            <!-- <canvas></canvas> -->
-            <!-- <div class="graphDiv">
-                <img src="graph.png" alt="" style="max-width: 700px;">
+            <H2>RainRoots</H2>
+            <!-- <div class="slogan">
+                <h3>Not what the rain can do for your farm, but what your farm can do for the rain. </h3> ## Moved so there was less information when using application.
             </div> -->
 
-            <div class="chart">
-                <canvas id="myChart"></canvas>
+        </div>
+        <div class="informationContainer">
+            <div class="location">
+                <p>Location: <span>lat: 101.1010</span> <span>long: 10101.101</span></p>
             </div>
-              
-            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-            <script src="chart.js"></script>
-              
+            <div class="dataContainer">
+                <div class="conversionDiv">
+
+                    <div class="conversionItemDiv">
+                        <img src="assets/icons/rainRoots_icons_foliage_01.svg" , alt="foliage icon" ,
+                            class="containerIcons">
+                        <div><label for="foliage">Foliage cover(%)</label>
+                            <input type="" id="foliage" name="foliage">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="conversionItemDiv">
+                        <img src="assets/icons/rainRoots_icons_groundMoisture_01.svg" , alt="ground moisture icon" ,
+                            class="containerIcons">
+                        <div><label for="groundMoisture">Ground Moisture(mm)</label>
+                            <input type="" id="groundMoisture" name="groundMoisture">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="conversionItemDiv">
+                        <img src="assets/icons/rainRoots_icons_precipitation_01.svg" , alt="precipitation icon" ,
+                            class="containerIcons">
+                        <div><label for="precipitation">Precipitation(mm)</label>
+                            <input type="" id="precipitation" name="precipitation">
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+                <div class="graphDiv">
+                    <!-- <canvas></canvas> -->
+                    <img src="graph.png" alt="" style="max-width: 700px;">
+                </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script src="chart.js"></script>
+
+            </div>
+        </div>
+        <div class="footer" , style="display: flex; align-items: center;">
+            <img src="assets/logo/rainRoots_logoConcept_03.svg" , alt="RainRoots Logo" ,
+                style="max-width: 300px; max-height: auto;">
+            <div>
+                <div class="footer-heading">
+                    <p>THE MISSION</p> <!-- Maybe the text doesn't have a bold option-->
+                </div>
+                <span> When the climate's unpredictable, few know that they can increase their chance of rainfall by
+                    planting trees. <!-- CONTINUED -->
+                    Developing an easy to understand interface and combining predictive modelling with data from NASA,
+                    RainRoots enables farmers to ensure security and stability for their future generations, and to
+                    consider <!-- CONTINUED -->
+                    not what the rain can do for their farm, but what their farm can do for the rain.
+            </div>
+            </span>
         </div>
     </div>
 </body>
+
 </html>
