@@ -19,21 +19,31 @@
     <div class="container">
 
         <div class="header">
-            <H2>RainRoots</H2>
-            <!-- <div class="slogan">
-                <h3>Not what the rain can do for your farm, but what your farm can do for the rain. </h3> ## Moved so there was less information when using application.
-            </div> -->
+             <img src="assets\icons\RainRootsLogoConcept4.svg" , alt="RainRoots Logo" ,
+                style="max-width: 100px; max-height: auto;">
+            <a href="index.html" class="homeName">RainRoots</a>
+            <div class="slogan">
+                <h3>Not what the rain can do for your farm, but what your farm can do for the rain. </h3>
+            </div>
+            
+            
 
+        </div>
+        <div class="menuLinks">
+            <a href="localTrees.html">Local Native Flora Choices</a>
+            <a href="proposal.html">Our Proposal</a>
+            <a href="aboutUs.html">About us</a>
+            <a href="productScope.html">Product Scope</a>
         </div>
         <div class="informationContainer">
             <div class="location">
-                <p>Location: <span>lat: 101.1010</span> <span>long: 10101.101</span></p>
+            
             </div>
             <div class="dataContainer">
                 <div class="conversionDiv">
 
                     <div class="conversionItemDiv">
-                        <img src="assets/icons/rainRoots_icons_foliage_01.svg" , alt="foliage icon" ,
+                        <img width="30px" src="assets/icons/rainRoots_icons_foliage_01.svg" , alt="foliage icon" ,
                             class="containerIcons">
                         <div><label for="foliage">Foliage cover(%)</label>
                             <input type="" id="foliage" name="foliage">
@@ -42,16 +52,16 @@
                     <br>
 
                     <div class="conversionItemDiv">
-                        <img src="assets/icons/rainRoots_icons_groundMoisture_01.svg" , alt="ground moisture icon" ,
+                        <img width="30px" src="assets/icons/rainRoots_icons_groundMoisture_01.svg" , alt="ground moisture icon" ,
                             class="containerIcons">
-                        <div><label for="groundMoisture">Ground Moisture(mm)</label>
-                            <input type="" id="groundMoisture" name="groundMoisture">
+                        <div><label for="groundMoisture">Ground Moisture(0-1)</label>
+                            <input type="" id="groundMoisture" name="groundMoisture" >
                         </div>
                     </div>
                     <br>
 
                     <div class="conversionItemDiv">
-                        <img src="assets/icons/rainRoots_icons_precipitation_01.svg" , alt="precipitation icon" ,
+                        <img width="30px" src="assets/icons/rainRoots_icons_precipitation_01.svg" , alt="precipitation icon" ,
                             class="containerIcons">
                         <div><label for="precipitation">Precipitation(mm)</label>
                             <input type="" id="precipitation" name="precipitation">
@@ -61,8 +71,9 @@
 
                 </div>
                 <div class="graphDiv">
-                    <!-- <canvas></canvas> -->
-                    <img src="graph.png" alt="" style="max-width: 700px;">
+                    <p>How increasing trees and foliage will lead to stabilised rainfall and reduced flooding.</p>
+                    <canvas id="myChart" style="width:800px; height: 500px;" ></canvas>
+                    
                 </div>
 
                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -71,7 +82,7 @@
             </div>
         </div>
         <div class="footer" , style="display: flex; align-items: center;">
-            <img src="assets/logo/rainRoots_logoConcept_03.svg" , alt="RainRoots Logo" ,
+            <img src="assets\icons\RainRootslogoconcept32.svg" , alt="RainRoots Logo" ,
                 style="max-width: 300px; max-height: auto;">
             <div>
                 <div class="footer-heading">
@@ -88,5 +99,60 @@
         </div>
     </div>
 </body>
+<script>
+
+
+    let precipation = 3.16; 
+    let foliage = 0.329;
+    let groundMoisture = 0.6;
+    let evoTrans = 165.49;
+    let runOff = 1.2;
+
+    foliageInput = document.getElementById("foliage");
+    precipationInput = document.getElementById("precipitation");
+    groundMoistureInput = document.getElementById("foliage");
+
+    foliageInput.addEventListener("input",(event) => {
+        foliage = document.getElementById("foliage").value;
+        groundMoisture = (precipation - evoTrans * (foliage - runOff)) * 0.001;
+        precipation = (groundMoisture/0.01) + (evoTrans * foliage) + runOff;
+
+       document.getElementById("precipitation").value = precipation.toFixed(2);
+       document.getElementById("groundMoisture").value = groundMoisture.toFixed(2);
+
+    });
+
+    precipationInput.addEventListener("input", (event) => {
+        precipation = document.getElementById("precipitation").value;
+
+        groundMoisture = (precipation - evoTrans * (foliage - runOff)) * 0.001;
+        foliage = ((groundMoisture / 0.01) - precipation + runOff)/evoTrans;
+
+        document.getElementById("groundMoisture").value = groundMoisture.toFixed(2);
+        document.getElementById("foliage").value = foliage.toFixed(2);
+        
+    });
+
+    groundMoistureInput.addEventListener("input", (event) => {
+        groundMoisture = document.getElementById("foliage").value;
+
+        foliage = ((groundMoisture / 0.01) - precipation + runOff)/evoTrans;
+        precipation = (groundMoisture/0.01) + (evoTrans * foliage) + runOff;
+
+         document.getElementById("precipitation").value = precipation.toFixed(2);
+         document.getElementById("foliage").value = foliage.toFixed(2);
+
+
+    });
+
+    // groundMoisture = (precipation - evoTrans * (foliage - runOff)) * 0.001;
+    // foliage = ((groundMoisture / 0.01) - precipation + runOff)/evoTrans;
+    // precipation = (groundMoisture/0.01) + (evoTrans * foliage) + runOff;
+
+
+    document.getElementById("precipitation").value = precipation.toFixed(2);
+    document.getElementById("groundMoisture").value = groundMoisture.toFixed(2);
+    document.getElementById("foliage").value = foliage.toFixed(2);
+</script>
 
 </html>
