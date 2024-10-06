@@ -5,41 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rain Roots</title>
     <link rel="stylesheet" href="styles.css">
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-     <div class="header">
-        <H2>RainRoots</H2>
-        <div class="slogan">
-       <h3>Not what the rain can do for your farm, but what your farm can do for the rain. </h3>
-       </div>
-        
-        </div>
-            <div class="location">
-                <p>Location:  <span>lat: 101.1010</span> <span>long: 10101.101</span></p>
+        <div class="header">
+            <h2>RainRoots</h2>
+            <div class="slogan">
+                <h3>Not what the rain can do for your farm, but what your farm can do for the rain. </h3>
             </div>
-            <div class="dataContainer">
-                 <div class="conversionDiv">
-            <label for="foliage">Foliage cover(%)</label>
-            <input type="" id="foliage" name="foliage"> 
-            <br>
-            <label for="groundMoisture">Ground Moisture()</label>
-            <input type="" id="groundMoisture" name="groundMoisture"> 
-            <br>
-            <label for="precipitation">Precipitation(mm)</label>
-            <input type="" id="precipitation" name="precipitation"> 
-            <br>
-        </div>
-            <div class="graphDiv">
-        <!-- <canvas></canvas> -->
+            
+            <div>
+                <div class="location">
+                    <p>Location:  <span>lat: 101.1010</span> <span>long: 10101.101</span></p>
+                </div>
+                <div class="dataContainer">
+                    <div class="conversionDiv">
+                        <label for="foliage">Foliage cover(%)</label>
+                        <input type="" id="foliage" name="foliage"> 
+                        <br>
+                        <label for="groundMoisture">Ground Moisture()</label>
+                        <input type="" id="groundMoisture" name="groundMoisture"> 
+                        <br>
+                        <label for="precipitation">Precipitation(mm)</label>
+                        <input type="" id="precipitation" name="precipitation"> 
+                        <br>
+                </div>
+            </div>
+            <!-- <canvas></canvas> -->
+            <!-- <div class="graphDiv">
                 <img src="graph.png" alt="" style="max-width: 700px;">
+            </div> -->
+
+            <div class="chart">
+                <canvas id="myChart"></canvas>
+            </div>
+              
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="chart.js"></script>
+              
         </div>
-       
-        </div>
-     </div>
+    </div>
 </body>
 </html>
